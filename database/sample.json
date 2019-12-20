@@ -1,6 +1,6 @@
 {
 	"type": "name",
-	"regular_expresion": [
+	"regular_expression": [
 		"[A-Za-zÁÉÍÓÚñáéíóúÑ]+",
 		"^([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\']+[\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])+[\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])?$",
 		"^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ']+$"
@@ -8,7 +8,7 @@
 },
 {
 	"type": "last_name",
-	"regular_expresion": [
+	"regular_expression": [
 		"[A-Za-zÁÉÍÓÚñáéíóúÑ]+",
 		"^([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\']+[\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])+[\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])?$",
 		"^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ']+$"
@@ -16,81 +16,81 @@
 },
 {
 	"type": "address",
-	"regular_expresion": [
+	"regular_expression": [
 		"[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'\\.\\-\\s\\,]+"
 	]
 },
 {
 	"type": "city",
-	"regular_expresion": [
+	"regular_expression": [
 		"[A-Za-zÁÉÍÓÚñáéíóúÑ]+",
 		"^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ']+$"
 	]
 },
 {
 	"type": "postal_code",
-	"regular_expresion": [
+	"regular_expression": [
 		"[0-9]{3,}"
 	]
 },
 {
 	"type": "country",
-	"regular_expresion": [
+	"regular_expression": [
 		"[A-Za-zÁÉÍÓÚñáéíóúÑ]+",
 		"^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ']+$"
 	]
 },
 {
 	"type": "phone",
-	"regular_expresion": [
+	"regular_expression": [
 		"^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*$"
 	]
 },
 {
 	"type": "age",
-	"regular_expresion": [
+	"regular_expression": [
 		"[0-9]+"
 	]
 },
 {
 	"type": "date_birth",
-	"regular_expresion": [
+	"regular_expression": [
 		""
 	]
 },
 {
 	"type": "gender",
-	"regular_expresion": [
+	"regular_expression": [
 		""
 	]
 },
 {
 	"type": "bank_acuount",
-	"regular_expresion": [
+	"regular_expression": [
 		""
 	]
 },
 {
 	"type": "drive_license",
-	"regular_expresion": [
+	"regular_expression": [
 		""
 	]
 },
 {
 	"type": "passport",
-	"regular_expresion": [
+	"regular_expression": [
 		""
 	]
 },
 {
 	"type": "identification_card",
-	"regular_expresion": [
+	"regular_expression": [
 		""
 	]
 },
 {
 	"type": "credit_card",
-	"regular_expresion": [
+	"regular_expression": [
 		"\d{4}-\d{4}-\d{4}-\d{4}"
 	]
 }
