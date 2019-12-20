@@ -10,3 +10,34 @@ module.exports.parse_json = function (json_data) {
     }
     return all_attributes;
 };
+
+module.exports.execute_previous_filters = function (data, constants) {
+    // Previous filters
+    //var _aux = false;
+    if (!isNaN(data)) {
+        var _aux = {};
+        _aux['data'] = data;
+        if (data > 0 && data < 100) {
+            _aux['type'] = 'age';
+        } else {
+            _aux['type'] = 'number';
+        }
+        _aux['counts'] = 1;
+        return _aux;
+    } else {
+        for (let i=0; i<constants.length; i++) {
+            var values = constants[i]['value'];
+            for (let j=0; j<values.length; j++) {
+                if (data.toLowerCase() == values[j].toLowerCase()) {
+                    _aux = {};
+                    _aux['data'] = data;
+                    _aux['type'] = constants[i]['type'];
+                    //_aux['counts'] = 1;
+                    //console.log(_aux);
+                    return _aux;
+                }
+            }
+        }
+    }
+    return false;
+};
