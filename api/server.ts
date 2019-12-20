@@ -2,10 +2,10 @@ import * as BodyParser from 'body-parser'
 import * as express from 'express'
 import { MongoClient } from 'mongodb'
 import { checkData, executePreviousFilters, parseJson } from './src/utils'
-const PORT = 80
+const PORT = 5000
 const app = express()
 const DATABASE_NAME = 'data_identifier'
-const CONNECTION_URL = 'mongodb://root:password@172.16.99.232:27017/'
+const CONNECTION_URL = 'mongodb://root:password@172.29.207.173:27017/'
 
 app.use(BodyParser.json())
 app.use(BodyParser.urlencoded({ extended: true }))
@@ -44,6 +44,7 @@ app.post('/check-pattern', async (request, response) => {
   for (const _body in files) {
     const values = parseJson(_body)
 
+    // tslint:disable-next-line: no-console
     console.log(values)
 
     const _values = await first_value_filter(values)
@@ -67,7 +68,7 @@ async function first_value_filter(values) {
     values.forEach(function(item, _index) {
       const fixedFilters = executePreviousFilters(item, constants)
       // tslint:disable-next-line: no-console
-      //console.log(fixedFilters)
+      // console.log(fixedFilters)
       if (fixedFilters !== false) {
         _matchedData.push(fixedFilters)
       } else {
