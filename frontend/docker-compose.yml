@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    container_name: frontend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '3004:80'
+    env_file: ./.env
